@@ -28,7 +28,16 @@ public class Test {
 		dev.artifacts = "Sprint Backlog";
 		dev.ceremonies =  "Sprint Demo, Planning, Retro, Daily standup";
 		dev.attendsScrumMeetings();
+		dev.employeeID =101;
+		// dev.employeeSSN -> not accessible because its private
 		
+		
+		System.out.println("Tester");
+		Tester tes =  new Tester ();
+		tes.work();
+		tes.getPaid();
+		tes.salary = 700000;
+		tes.test();
 		
 	}
 
