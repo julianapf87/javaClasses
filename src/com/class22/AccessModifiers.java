@@ -12,6 +12,7 @@ public class AccessModifiers {
 	}
 	
 	static void hello2 () {
+	
 		System.out.println("hello2");
 		
 	}
