@@ -13,9 +13,10 @@ public class webDriverTest {
 		firefox.open();
 		System.out.println("=========");
 		
-		webDriver driver = new ChromeDriver();
+		webDriver driver = new FirefoxDriver();
 		driver.open();
 		driver.refresh();
+		//no acces to chold specific class through parent type
 				
 
 	}
