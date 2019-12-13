@@ -1,29 +1,48 @@
 package com.class31;
 
 public abstract class Marks {
-	public abstract void getPercentage();
+	public abstract double getPercentage();
 
 }
 
 class A extends Marks {
-	int score;
-	int percentage;
+	double math;
+	double bio;
+	double geography;
 
-	public A(int score1, int score2, int score3) {
-		this.score = score;
-		this.percentage = percentage;
-		score = score1 + score2 + score3;
-
+	public A(double math, double bio, double geography) {
+		this.math = math;
+		this.bio = bio;
+		this.geography = geography;
 	}
 
 	@Override
-	public void getPercentage() {
-		System.out.println((score / 300) * 100);
-
+	public double getPercentage() {
+		
+		double average = (math + bio + geography)/3;
+	
+		return average;
 	}
 
 }
 
-class B {
+class B extends Marks{
 
+	double math;
+	double bio;
+	double geography;
+//
+//	public A(double math, double bio, double geography) {
+//		this.math = math;
+//		this.bio = bio;
+//		this.geography = geography;
+//	}
+
+	@Override
+	public double getPercentage() {
+		
+		double average = (math + bio + geography)/3;
+	
+		return average;
+	}
 }

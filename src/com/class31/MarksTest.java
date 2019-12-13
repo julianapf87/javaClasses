@@ -2,8 +2,8 @@ package com.class31;
 
 public class MarksTest {
 public static void main(String[] args) {
-	A obj = new A (100, 74,78);
-	obj.getPercentage();
-
+	A studentA = new A(90, 89, 100);
+	double average = studentA.getPercentage();
+	System.out.println(average);
 	}
 }

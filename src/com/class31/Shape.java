@@ -30,3 +30,15 @@ class Circle implements Shape {
 	}
 }
 
+class Square implements Shape{
+	
+	@Override
+	public void calculateArea(double r) {
+		System.out.println(3.14 * r);
+	}
+	@Override
+	public void calculatePerimeter(double num2) {
+		System.out.println(2 * 3.14 * num2);
+		
+	}
+}
